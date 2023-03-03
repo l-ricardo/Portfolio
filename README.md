@@ -1,0 +1,2 @@
+# Portfólio usando HTML/CSS
+Esse projeto é um desafio feito durante um curso de capacitação em HTML e CSS realizado durante o processo Trainee da Orc'estra Gamificação. Tem a proposta de criar um portfólio usando HTML e CSS puro e que siga os [requisitos](Requisitos.md).
