@@ -19,6 +19,8 @@ header {
 section {
     height: 77.5vh;
     padding-top: 10vh;
+    display: flex;
+    justify-content: space-between;
 }
 
 .meia-coluna {
@@ -42,6 +44,7 @@ section {
     color: white;
     transition: .4s;
 }
+
 
 #foto {
     width: 30vh;
