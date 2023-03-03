@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    font-family: 'Bungee', cursive;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: stretch;
+    height: 7.5vh;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+section {
+    height: 77.5vh;
+    padding-top: 10vh;
+}
+
+.meia-coluna {
+    width: 50%;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav a {
+    color: rgb(21, 157, 0);
+    /* remove o sublinhado dos links */
+    text-decoration: none;
+    padding: 2.5vh 1.5rem;
+    font-size: 2.5vh;
+}
+
+.nav a:hover {
+    color: white;
+    transition: .4s;
+}
+
+#foto {
+    width: 30vh;
+}
+
+#ola {
+    background-color: aqua;
+    text-shadow: 10px;
+    font-size: 5vh;
+}
+
+#sobre {
+    background-color: rgb(135, 214, 25);
+    font-size: 1.5vh;
+}
+
+#projetos {
+    background-color: gray;
+}
+
+#contato {
+    background-color: red;
+}
