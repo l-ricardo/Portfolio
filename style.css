@@ -1,30 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
+:root {
+    --main-color: #c6a92a;
+    --secondary-color: #ffffff;
+    --back-color: #000000;
+    --back-color2: #002930;
+    /* --big-font: 5rem;
+    --big-font2: 3rem;
+    --h2-font: 2rem;
+    --p-font: 0.9rem; */
+}
+
 * {
     font-family: 'Bungee', cursive;
     padding: 0px;
     margin: 0px;
+    color: var(--secondary-color);
 }
 
 header {
-    background-color: black;
     position: fixed;
     display: flex;
-    align-items: stretch;
-    height: 7.5vh;
+    flex-direction: row-reverse;
     width: 100%;
-    justify-content: flex-end;
+    height: 7.5vh;
 }
 
 section {
-    height: 77.5vh;
+    height: 90vh;
     padding-top: 10vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.meia-coluna {
-    width: 50%;
+b {
+    color: var(--main-color);
 }
 
 .nav {
@@ -33,7 +43,7 @@ section {
 }
 
 .nav a {
-    color: rgb(21, 157, 0);
+    color: var(--secondary-color);
     /* remove o sublinhado dos links */
     text-decoration: none;
     padding: 2.5vh 1.5rem;
@@ -41,30 +51,77 @@ section {
 }
 
 .nav a:hover {
-    color: white;
+    color: var(--main-color);
     transition: .4s;
 }
 
 
-#foto {
-    width: 30vh;
-}
-
-#ola {
-    background-color: aqua;
+#home {
+    background-color: var(--back-color);
     text-shadow: 10px;
     font-size: 5vh;
 }
 
-#sobre {
-    background-color: rgb(135, 214, 25);
+
+#about-box {
+    width: 100em;
+}
+
+#about {
+    background-color: var(--back-color2);
     font-size: 1.5vh;
 }
 
-#projetos {
-    background-color: gray;
+
+#projects {
+    background-color: var(--back-color);
+    display: flex;
+    justify-content: flex-end;
 }
 
-#contato {
-    background-color: red;
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 2rem;
+    margin: 3rem;
+}
+
+.project-box {
+    text-align: center;
+    padding: 20px 30px;
+    background-color: var(--back-color2);
+    border-radius: 20px;
+
+}
+
+.project-box p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+
+#contact-box {
+    width: 100em;
+}
+
+#contact {
+    background-color: var(--back-color2);
+}
+
+
+#photo {
+    width: 200px;
+}
+
+#project-icon {
+    width: 170px;
+}
+
+#link-icon {
+    width: 20px;
+}
+
+#social-icon {
+    width: 20px;
 }
