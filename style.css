@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
 
 :root {
     --main-color: #f8bd3b;
     --secondary-color: #ffffff;
-    --back-color: #141414;
-    --back-color2: #191a1b;
+    --back-color: #090909;
+    --back-color2: #181818;
     /* --big-font: 5rem;
     --big-font2: 3rem;
     --h2-font: 2rem;
@@ -13,8 +14,8 @@
 }
 
 * {
-    /* TODO: Mudar a fonte */
-    font-family: 'Bungee', cursive;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 1.1rem;
     padding: 0px;
     margin: 0px;
     color: var(--secondary-color);
@@ -26,11 +27,12 @@ header {
     flex-direction: row-reverse;
     width: 100%;
     height: 7.5vh;
+    z-index: 1;
 }
 
 section {
-    height: 90vh;
-    padding: 3rem;
+    height: 100vh;
+    padding: 0 12rem;
     display: flex;
     flex-direction: column;
     /* centraliza o conteudo verticamente */
@@ -42,7 +44,9 @@ b {
 }
 
 h1 {
-    font-size: 5vh;
+    font-size: 2rem;
+    font-family: 'Bungee', cursive;
+    padding-bottom: 2.5vh;
 }
 
 
@@ -50,6 +54,8 @@ h1 {
 .nav {
     list-style: none;
     display: flex;
+    padding-top: 1.5vh;
+    font-family: 'Bungee', cursive;
 }
 
 .nav a {
@@ -57,7 +63,7 @@ h1 {
     /* remove o sublinhado dos links */
     text-decoration: none;
     padding: 2.5vh 1.5rem;
-    font-size: 2.5vh;
+    font-size: 4vh;
 }
 
 .nav a:hover {
@@ -76,42 +82,43 @@ h1 {
 
 #l1 {
     color: var(--secondary-color);
-    opacity: 0.5;
+    opacity: 0.6;
     font-size: 3vh;
+    font-family: 'Bungee', cursive;
 }
 
 #l2 {
     color: var(--main-color);
     font-size: 10vh;
     line-height: 0.4;
+    font-family: 'Bungee', cursive;
 }
 
 #l3 {
     color: var(--secondary-color);
     padding-top: 3vh;
-    font-size: 2vh;
+    font-size: 1rem;
+    font-family: 'Bungee', cursive;
 }
 
 #l4 {
     padding-top: 30vh;
-    padding-left: 25rem;
+    padding-left: 10rem;
     color: var(--secondary-color);
     text-align: right;
     line-height: 1.8;
+    font-size: 1rem;
 }
 
 
 /* ---------------------------------------------------------------------------------- */
 #about {
     background-color: var(--back-color2);
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     line-height: 1.8;
 }
 
 #about-box {
-    /* TODO: modificar padding quando colocar outra foto */
-    padding: 20px 30px;
-    padding-right: 20px;
     background-color: var(--back-color);
     border-radius: 20px;
     display: flex;
@@ -119,6 +126,11 @@ h1 {
     text-align: justify;
     align-items: center;
 }
+
+#about-box p {
+    margin: 3vh 2rem;
+}
+
 
 
 /* ---------------------------------------------------------------------------------- */
@@ -134,14 +146,14 @@ h1 {
 
 .project-box {
     text-align: center;
-    padding: 20px 30px;
+    padding: 1.5vh 2rem;
     background-color: var(--back-color2);
     border-radius: 20px;
 }
 
 .project-box p {
     text-align: justify;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .project-box a {
@@ -169,7 +181,7 @@ h1 {
 }
 
 #contact-box {
-    padding: 20px 30px;
+    padding: 1.5vh 2rem;
     background-color: var(--back-color);
     border-radius: 20px;
 }
@@ -184,13 +196,12 @@ h1 {
 
 /* ---------------------------------------------------------------------------------- */
 #home-photo {
-    height: 80vh;
-    margin-right: 60px;
+    height: 100vh;
+    opacity: 0.9;
 }
 
 #about-photo {
     height: 60vh;
-    margin-left: 40px;
 }
 
 .project-icon {
