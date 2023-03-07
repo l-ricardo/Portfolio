@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
 
 :root {
-    --main-color: #f8bd3b;
+    --main-color: #7b0d48;
     --secondary-color: #ffffff;
     --back-color: #090909;
     --back-color2: #181818;
@@ -14,11 +14,11 @@
 }
 
 * {
+    color: var(--secondary-color);
     font-family: 'Gemunu Libre', sans-serif;
     font-size: 1.1rem;
-    padding: 0px;
-    margin: 0px;
-    color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -27,11 +27,13 @@ header {
     flex-direction: row-reverse;
     width: 100%;
     height: 7.5vh;
+    /* Resolve o bug da navbar embaixo da PhotoHome */
     z-index: 1;
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     padding: 0 12rem;
     display: flex;
     flex-direction: column;
@@ -110,6 +112,11 @@ h1 {
     font-size: 1rem;
 }
 
+#home-photo {
+    height: 100vh;
+    opacity: 0.9;
+}
+
 
 /* ---------------------------------------------------------------------------------- */
 #about {
@@ -121,16 +128,19 @@ h1 {
 #about-box {
     background-color: var(--back-color);
     border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    text-align: justify;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
 }
 
 #about-box p {
     margin: 3vh 2rem;
+    text-align: justify;
 }
 
+#about-photo {
+    height: 60vh;
+}
 
 
 /* ---------------------------------------------------------------------------------- */
@@ -164,6 +174,9 @@ h1 {
     text-decoration: none;
 }
 
+.project-box h2 {
+ font-size: 2rem;
+}
 .project-box h2:hover {
     color: var(--main-color);
     transition: 0.4s;
@@ -172,6 +185,15 @@ h1 {
 
 .project-box h2:not(:hover) {
     transition: 0.8s;
+}
+
+.project-icon {
+    height: 170px;
+}
+
+.link-icon {
+    height: 25px;
+    margin-left: 10px;
 }
 
 
@@ -187,42 +209,29 @@ h1 {
 }
 
 #contact-box ul {
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
     display: flex;
     flex-direction: row;
 }
 
-
-/* ---------------------------------------------------------------------------------- */
-#home-photo {
-    height: 100vh;
-    opacity: 0.9;
+#contact-box p {
+    margin-bottom: 3vh;
 }
 
-#about-photo {
-    height: 60vh;
-}
-
-.project-icon {
-    height: 170px;
-}
-
-.link-icon {
-    height: 40px;
-    margin-left: 25px;
-}
-
-.social-icon {
-    padding: 10px 80px 10px 80px;
+.social-svg {
+    /* padding: 0 8vw 0 8vw; */
+    width: 60px;
     height: 60px;
+    opacity: 0.8;
 }
 
-.social-icon:hover {
+.social-svg:hover {
     transform: translateY(-10px);
     transition: 0.4s;
+    opacity: 1;
 }
 
-.social-icon:not(:hover) {
+.social-svg:not(:hover) {
     transition: 0.8s;
 }
