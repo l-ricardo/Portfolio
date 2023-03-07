@@ -12,48 +12,112 @@
 
     <body>
         <div>
-            <!-------------------- Cabecalho -------------------->
+            <!-------------------- Navbar -------------------->
             <header>
                 <ul href="#" class="nav">
-                    <li><a href="#ola">Olá</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#home">Olá</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </header>
 
 
-            <!---------------------- Olá ---------------------->
-            <section id="ola">
-                <div class="meia-coluna">
-                    <p>Olá! <br> Eu sou Ricardo.</p>
+            <!---------------------- Home ---------------------->
+            <section id="home">
+                <div>
+                    <img id="photo" src="/assets/photo.png">
                 </div>
-                <div class="meia-coluna">
-                    <img id="foto" src="/assets/foto.png">
+                <div>
+                    <p>Olá!Eu sou</p>
+                    <p>Ricardo</p>
+                    <p>Engenheiro de Software em formação</p>
+                    <p>Determinado a tornar o mundo um lugar melhor, um commit de cada vez.</p>
                 </div>
             </section>
 
 
-            <!---------------------- Sobre ---------------------->
-            <section id="sobre">
-                <a>Sou estudante de Engenharia de Software na UnB. Dedicado, responsável e com proficiência em liderar. Inglês avançado, sei programar em C, Python, Java, tenho experiência com versionamento de código usando Git e GitHub e atualmente estou evoluindo meus conhecimentos em JavaScript.</a>
+            <!---------------------- About ---------------------->
+            <section id="about">
+                <h1>Sobre Mim</h1>
+                <div id="about-box">
+                    <div>
+                        <p>Atualmente cursando Engenharia de Software na <b>UnB</b> e Trainee da Empresa Júnior
+                            <b>Orc'estra Gamificação</b>. Dedicado, responsável e com proficiência em liderar.
+                            <b>Inglês</b> avançado, sei programar em <b>C</b>, <b>Python</b>, <b>Java</b>, tenho
+                            experiência com versionamento de código usando <b>Git</b> e <b>GitHub</b> e atualmente estou
+                            evoluindo meus conhecimentos em <b>JavaScript</b> e frameworks como <b>React</b>.
+                        </p>
+                    </div>
+                    <div>
+                        <img id="photo" src="/assets/photo.png">
+                    </div>
+                </div>
             </section>
 
 
-            <!-------------------- Projetos -------------------->
-            <section id="projetos">
-                <p>Meus projetos:</p>
+            <!-------------------- Projects -------------------->
+            <section id="projects">
+                <h1>Meus projetos</h1>
+                <div class="projects-container">
+
+                    <div class="project-box">
+                        <div>
+                            <img id="link-icon" src="/assets/icons/link.png">
+                            <h2>AéreoDash</h2>
+                        </div>
+                        <img class="project-icon" src="/assets/icons/AereoDash.png">
+                        <p> Dashboard interativo sobre o tráfego aéreo no Brasil feito utilizando dados reais da
+                            ANAC. Desenvolvido em <b>Python</b> com a ajuda de bibliotecas como o <b>Dash</b> e
+                            <b>Pandas</b>.
+                        </p>
+                    </div>
+
+                    <div class="project-box">
+                        <div>
+                            <img id="link-icon" src="/assets/icons/link.png">
+                            <h2>LoCar</h2>
+                        </div>
+                        <img class="project-icon" src="/assets/icons/LoCar.png">
+                        <p> Sistema de gerenciamento para uma concessionária de aluguel de veículos. Permite
+                            cadastro de clientes e veiculos, bem como administrar os aluguéis de maneira mais
+                            eficiente. Desenvolvido inteiramente com a linguagem <b>C</b>.
+                        </p>
+                    </div>
+
+                    <div class="project-box">
+                        <div>
+                            <img id="link-icon" src="/assets/icons/link.png">
+                            <h2>TeleGUIADO</h2>
+                        </div>
+                        <img class="project-icon" src="/assets/icons/TeleGUIADO.png">
+                        <p>Aplicação feita com o propósito de guiar um usuário através da programação de canais da TV.
+                            Desenvolvido utilizando a linguagem <b>Java</b> e bibliotecas como <b>Swing</b> e
+                            <b>AWT</b>.
+                        </p>
+                    </div>
+
+                </div>
             </section>
 
 
-            <!--------------------- Contato --------------------->
-            <section id="contato">
-                <p>Pode me encontrar contatar em:</p>
-                <ul>
-                    <li><a href="https://lrsj2003@gmail.com">Email</a></li>
-                    <li><a href="https://linkedin.com/in/l-ricardo">Linkedin</a></li>
-                    <li><a href="https://github.com/l-ricardo">GitHub</a></li>
-                </ul>
+            <!--------------------- Contact --------------------->
+            <section id="contact">
+                <h1>Entre em contato</h1>
+                <div id="contact-box">
+                    <p>Se estiver se perguntando como pode entrar em contato comigo, é pra isso que aqueles os ícones
+                        brilhantes servem.</p>
+                    <div>
+                        <ul>
+                            <li><a href="https://lrsj2003@gmail.com"><img id="social-icon"
+                                        src="/assets/icons/Email.png">Email</a></li>
+                            <li><a href="https://linkedin.com/in/l-ricardo"><img id="social-icon"
+                                        src="/assets/icons/Linkedin.png">Linkedin</a></li>
+                            <li><a href="https://github.com/l-ricardo"><img id="social-icon"
+                                        src="/assets/icons/GitHub.png">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </div>
 
