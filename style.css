@@ -34,7 +34,7 @@ header {
 section {
     min-height: 100vh;
     height: auto;
-    padding: 0 12rem;
+    padding: 0 12vw;
     display: flex;
     flex-direction: column;
     /* centraliza o conteudo verticamente */
@@ -130,7 +130,7 @@ h1 {
     border-radius: 20px;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(356px, auto));
 }
 
 #about-box p {
@@ -234,4 +234,12 @@ h1 {
 
 .social-svg:not(:hover) {
     transition: 0.8s;
+}
+
+/* ---------------------------------------------------------------------------------- */
+@media screen and (max-width:712px) {
+    #home-photo{
+    height: 50vh;
+    }
+
 }
