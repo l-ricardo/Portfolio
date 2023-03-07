@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 :root {
-    --main-color: #c6a92a;
+    --main-color: #f8bd3b;
     --secondary-color: #ffffff;
-    --back-color: #000000;
-    --back-color2: #002930;
+    --back-color: #141414;
+    --back-color2: #191a1b;
     /* --big-font: 5rem;
     --big-font2: 3rem;
     --h2-font: 2rem;
     --p-font: 0.9rem; */
+    /* TODO: Organizar os tamanhos das letras aqui */
 }
 
 * {
+    /* TODO: Mudar a fonte */
     font-family: 'Bungee', cursive;
     padding: 0px;
     margin: 0px;
@@ -28,15 +30,23 @@ header {
 
 section {
     height: 90vh;
-    padding-top: 10vh;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
+    /* centraliza o conteudo verticamente */
+    justify-content: center;
 }
 
 b {
     color: var(--main-color);
 }
 
+h1 {
+    font-size: 5vh;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
 .nav {
     list-style: none;
     display: flex;
@@ -56,35 +66,70 @@ b {
 }
 
 
+/* ---------------------------------------------------------------------------------- */
 #home {
     background-color: var(--back-color);
-    text-shadow: 10px;
-    font-size: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#l1 {
+    color: var(--secondary-color);
+    opacity: 0.5;
+    font-size: 3vh;
+}
+
+#l2 {
+    color: var(--main-color);
+    font-size: 10vh;
+    line-height: 0.4;
+}
+
+#l3 {
+    color: var(--secondary-color);
+    padding-top: 3vh;
+    font-size: 2vh;
+}
+
+#l4 {
+    padding-top: 30vh;
+    padding-left: 25rem;
+    color: var(--secondary-color);
+    text-align: right;
+    line-height: 1.8;
 }
 
 
-#about-box {
-    width: 100em;
-}
-
+/* ---------------------------------------------------------------------------------- */
 #about {
     background-color: var(--back-color2);
-    font-size: 1.5vh;
+    font-size: 2.5vh;
+    line-height: 1.8;
+}
+
+#about-box {
+    /* TODO: modificar padding quando colocar outra foto */
+    padding: 20px 30px;
+    padding-right: 20px;
+    background-color: var(--back-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    align-items: center;
 }
 
 
+/* ---------------------------------------------------------------------------------- */
 #projects {
     background-color: var(--back-color);
-    display: flex;
-    justify-content: flex-end;
 }
-
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     grid-gap: 2rem;
-    margin: 3rem;
 }
 
 .project-box {
@@ -92,36 +137,81 @@ b {
     padding: 20px 30px;
     background-color: var(--back-color2);
     border-radius: 20px;
-
 }
 
 .project-box p {
     text-align: justify;
-    line-height: 1.7;
+    line-height: 2;
+}
+
+.project-box a {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+}
+
+.project-box h2:hover {
+    color: var(--main-color);
+    transition: 0.4s;
+    transform: translateY(-10px);
+}
+
+.project-box h2:not(:hover) {
+    transition: 0.8s;
 }
 
 
-#contact-box {
-    width: 100em;
-}
-
+/* ---------------------------------------------------------------------------------- */
 #contact {
     background-color: var(--back-color2);
 }
 
-
-#photo {
-    width: 200px;
+#contact-box {
+    padding: 20px 30px;
+    background-color: var(--back-color);
+    border-radius: 20px;
 }
 
-#project-icon {
-    width: 170px;
+#contact-box ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
-#link-icon {
-    width: 20px;
+
+/* ---------------------------------------------------------------------------------- */
+#home-photo {
+    height: 80vh;
+    margin-right: 60px;
 }
 
-#social-icon {
-    width: 20px;
+#about-photo {
+    height: 60vh;
+    margin-left: 40px;
+}
+
+.project-icon {
+    height: 170px;
+}
+
+.link-icon {
+    height: 40px;
+    margin-left: 25px;
+}
+
+.social-icon {
+    padding: 10px 80px 10px 80px;
+    height: 60px;
+}
+
+.social-icon:hover {
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+
+.social-icon:not(:hover) {
+    transition: 0.8s;
 }
